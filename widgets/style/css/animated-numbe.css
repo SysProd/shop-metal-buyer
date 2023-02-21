@@ -1,0 +1,42 @@
+.adu5 {
+    -webkit-animation-duration:0.9s!important;
+    animation-duration:0.9s!important
+}
+
+.infinite {
+    -webkit-animation-iteration-count:infinite;
+    animation-iteration-count:infinite
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform:scale3d(1,1,1);
+        transform:scale3d(1,1,1)
+    }
+    50% {
+        -webkit-transform:scale3d(1.05,1.05,1.05);
+        transform:scale3d(1.05,1.05,1.05)
+    }
+    100% {
+        -webkit-transform:scale3d(1,1,1);
+        transform:scale3d(1,1,1)
+    }
+}
+@keyframes pulse {
+    0% {
+        -webkit-transform:scale3d(1,1,1);
+        transform:scale3d(1,1,1)
+    }
+    50% {
+        -webkit-transform:scale3d(1.05,1.05,1.05);
+        transform:scale3d(1.05,1.05,1.05)
+    }
+    100% {
+        -webkit-transform:scale3d(1,1,1);
+        transform:scale3d(1,1,1)
+    }
+}
+.animated.pulse {
+    -webkit-animation-name:pulse;
+    animation-name:pulse
+}

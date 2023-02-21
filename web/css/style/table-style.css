@@ -1,0 +1,177 @@
+
+.table-price
+{
+    width: 100%;
+    background: #fff;
+}
+.table-price thead
+{
+
+}
+.table-price thead tr
+{
+    background: #F3BB1C;
+}
+.table-price thead tr th
+{
+    vertical-align: middle;
+    text-align: center;
+    border-right: 1px solid #F9DD2A;
+    padding: 9px 0;
+}
+.table-price thead tr th:last-child
+{
+    border-right: none;
+}
+.table-price thead tr th:first-child
+{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "RobotoBold";
+    width: 56.5%;
+}
+.table-price thead tr th .o
+{
+    font-size: 20px;
+    font-family: "Roboto-Black";
+}
+.table-price thead tr th .c
+{
+    font-size: 14px;
+    color: #666666;
+}
+.table-price tbody
+{
+
+}
+.table-price tbody tr
+{
+
+}
+.table-price tbody tr:hover
+{
+    cursor: pointer;
+    background: #FEF6DB;
+    box-shadow: 0 0 0 3px #EEBB23
+}
+.table-price tbody tr:hover td
+{
+    border-top: 3px solid #EEBB23;
+    border-bottom: 3px solid #EEBB23;
+}
+.table-price tbody tr:hover td:first-child
+{
+    border-left: 3px solid #EEBB23;
+}
+.table-price tbody tr:hover td:last-child
+{
+     border-right: 3px solid #EEBB23;
+}
+.table-price tbody tr td:first-child
+{
+    width: 56.5%;
+}
+.table-price tbody tr td
+{
+      text-align: center;
+    vertical-align: middle;
+    border-right: 1px dotted #DCDCDC;
+    border-bottom: 2px solid #F9F9F9;
+    border-top: 3px solid #F9F9F9;
+    padding: 19px 0;
+
+}
+.table-price tbody tr td:last-child
+{
+    border-right: none;
+}
+.table-price tbody tr td:first-child
+{
+    text-align: left;
+    padding-left: 2%;
+}
+.table-price tbody tr .icon
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+.table-price tbody tr .desk
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 73%;
+    margin-left: 4%;
+}
+.table-price tbody tr .desk .name
+{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "RobotoMedium";
+    margin: 9px 0 -3px 0;
+}
+.table-price tbody tr .desk .type
+{
+    font-size: 18px;
+    color: #ffae00;
+    margin-bottom: 7px;
+}
+.table-price tbody tr .desk li
+{
+    font-size: 14px;
+    color: #666666;
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 18px;
+    line-height: 1.6;
+	margin:0;
+}
+.table-price tbody tr .desk li:before
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyREI0RDAzRjU1NjUxMUU2QThFNUUzODFFN0I1NDk1QyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyREI0RDA0MDU1NjUxMUU2QThFNUUzODFFN0I1NDk1QyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJEQjREMDNENTU2NTExRTZBOEU1RTM4MUU3QjU0OTVDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJEQjREMDNFNTU2NTExRTZBOEU1RTM4MUU3QjU0OTVDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+rPvG+gAAADtJREFUeNpi/LxbhgEKGpBpFiROPZTNCGKDJBqBuI4BAcBsJiD+z4AJ/jNBjWlEEgSxG1jQLIazAQIMAIzDCtj0jClFAAAAAElFTkSuQmCC');
+}
+.table-price tbody tr .pr1
+{
+    font-size: 24px;
+    color: #ffae00;
+    font-family: "RobotoBold";
+}
+.table-price tbody tr  .sep
+{
+    width: 60px;
+    background: #DCDCDC;
+    height: 1px;
+    margin: 10px auto;
+}
+.table-price tbody tr .car
+{
+
+}
+.table-price tbody tr .car a
+{
+    
+}
+.table-price tbody tr .car a img:last-child
+{
+    display:none;
+}
+.table-price tbody tr .car a:hover img:first-child
+{
+    display:none;
+}
+.table-price tbody tr .car a:hover img:last-child
+{
+    display:inline-block;
+}
+.table-price tbody tr .sh
+{
+    font-size: 18px;
+}
+.table-price tbody tr td img
+{
+    width: 113px;
+    height: 113px;
+    border-radius: 30px;
+}

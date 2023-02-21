@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /css
+Disallow: /fonts
+Disallow: /js
+Allow: /img
+Sitemap: http://гор-мет.рф/sitemap.xml
+Host: гор-мет.рф

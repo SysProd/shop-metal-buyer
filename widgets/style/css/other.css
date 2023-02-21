@@ -1,0 +1,1003 @@
+
+/*-------- 1.3 Forms             --------*/
+input,
+select,
+textarea {
+    font-family: 'Muli', sans-serif;
+}
+.input-custom {
+    appearance: none;
+    margin-bottom: 4px;
+    padding: 15px 15px 15px;
+    font-size: 18px;
+    line-height: 24px;
+    height: 54px;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 0;
+    color: #2b2b2b;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.input-custom:hover,
+.input-custom:focus,
+.input-custom.focus {
+    outline: none;
+    border-color: #fede00;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.input-custom.input-full {
+    width: 100%;
+}
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+    background: #fff;
+}
+.textarea-custom {
+    appearance: none;
+    margin-bottom: 4px;
+    padding: 15px 15px 15px;
+    font-size: 18px;
+    line-height: 24px;
+    height: 54px;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 0;
+    color: #2b2b2b;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    min-height: 193px;
+    height: auto;
+}
+.textarea-custom:hover,
+.textarea-custom:focus,
+.textarea-custom.focus {
+    outline: none;
+    border-color: #fede00;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.textarea-custom.input-full {
+    width: 100%;
+}
+.input-wrapper {
+    position: relative;
+    margin-bottom: 11px;
+}
+.placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    color: #989898;
+}
+input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    color: #989898;
+}
+input::-moz-placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    color: #989898;
+}
+input:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    color: #989898;
+}
+input:-moz-placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    color: #989898;
+}
+.required {
+    color: red;
+}
+input.input-custom,
+textarea.textarea-custom,
+.select-wrapper select.input-custom {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.select-wrapper {
+    position: relative;
+}
+.select-wrapper:before {
+    content: '\25BE';
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    width: 52px;
+    height: 52px;
+    font-size: 14px;
+    line-height: 54px;
+    pointer-events: none;
+    color: #2b2b2b;
+    text-align: center;
+    background-color: #fff;
+}
+.select-wrapper select {
+    padding-right: 40px;
+    width: 100%;
+    background-color: #fff;
+    color: #2b2b2b;
+}
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+/*for IE10*/
+select::-ms-expand {
+    display: none;
+}
+.contact-form {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+label {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #000;
+}
+form label.error {
+    display: block;
+    color: #ff0000;
+    font-size: 14px !important;
+    opacity: 1 !important;
+}
+.successform,
+.errorform {
+    display: none;
+    height: 70px;
+}
+.successform span,
+.errorform span {
+    display: block;
+}
+.successform span p,
+.errorform span p {
+    margin-top: 15px;
+}
+.successform span p {
+    color: #2990d6;
+}
+.errorform span p {
+    color: #c0392b;
+}
+.form-table input::-webkit-input-placeholder {
+    color: #000;
+}
+.form-table input::-moz-placeholder {
+    color: #000;
+}
+.form-table input:-ms-input-placeholder {
+    color: #000;
+}
+.form-table input:-moz-placeholder {
+    color: #000;
+}
+@media (min-width: 992px) {
+    .form-table {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        padding-top: 5px;
+    }
+    .form-table .form-group-cell {
+        display: table-cell;
+        vertical-align: top;
+        padding: 0 10px;
+    }
+    .form-table .form-group-cell.sm {
+        width: 125px;
+    }
+    .form-table .form-group-cell.action {
+        width: 190px;
+    }
+    .form-table .form-group-cell .btn {
+        height: 55px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .form-table .form-group-cell {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 10px;
+        width: 50%;
+        margin-right: -4px;
+    }
+    .form-table .form-group-cell.sm {
+        width: 125px;
+    }
+    .form-table .form-group-cell.action {
+        width: 190px;
+    }
+    .form-table .form-group-cell .btn {
+        height: 55px;
+    }
+}
+@media (max-width: 767px) {
+    .form-table {
+        max-width: 460px;
+        margin: 0 auto;
+    }
+}
+/*-------- 1.4 Buttons           --------*/
+button:focus,
+.btn:focus,
+button:active:focus,
+.btn:active:focus,
+button.active:focus,
+.btn.active:focus,
+button.focus,
+.btn.focus,
+button:active.focus,
+.btn:active.focus,
+button.active.focus,
+.btn.active.focus {
+    outline: 0;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+button:hover,
+.btn:hover,
+button:focus,
+.btn:focus,
+button.focus,
+.btn.focus {
+    outline: 0;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+button:active,
+.btn:active,
+button.active,
+.btn.active {
+    outline: 0;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+button.pull-right,
+.btn.pull-right {
+    margin-right: 10px;
+}
+.btn:not([data-action]) {
+    position: relative;
+    padding: 20px 25px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    height: auto;
+    border-radius: 0;
+    border: 0;
+    vertical-align: top;
+    -webkit-transition: all 1.2s .6s ease, background-color .4s ease-in-out, color .4s ease;
+    -moz-transition: all 1.2s .6s ease, background-color .4s ease-in-out, color .4s ease;
+    -ms-transition: all 1.2s .6s ease, background-color .4s ease-in-out, color .4s ease;
+    -o-transition: all 1.2s .6s ease, background-color .4s ease-in-out, color .4s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+    min-width: 195px;
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+}
+.btn:not([data-action]),
+.btn:not([data-action]).active,
+.btn:not([data-action]):active,
+.btn:not([data-action]).focus,
+.btn:not([data-action]):focus {
+    background-color: #2c2c2c;
+    color: #fff;
+}
+.btn:not([data-action]):hover {
+    background: #fede00;
+    color: #2c2c2c ;
+}
+.btn:not([data-action]):before,
+.btn:not([data-action]):after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 100%;
+    top: 0;
+    width: 150%;
+    height: 100%;
+    background-color: #fede00;
+    -webkit-transform: skew(30deg) translate3d(0, 0, 0);
+    -moz-transform: skew(30deg) translate3d(0, 0, 0);
+    -ms-transform: skew(30deg) translate3d(0, 0, 0);
+    -o-transform: skew(30deg) translate3d(0, 0, 0);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+.btn:not([data-action]):before {
+    left: auto;
+    right: 100%;
+    -webkit-transform: skew(-30deg) translate3d(0, 0, 0);
+    -moz-transform: skew(-30deg) translate3d(0, 0, 0);
+    -ms-transform: skew(-30deg) translate3d(0, 0, 0);
+    -o-transform: skew(-30deg) translate3d(0, 0, 0);
+}
+.btn:not([data-action]):hover {
+    background-color: #2c2c2c;
+}
+.btn:not([data-action]):hover:before {
+    -webkit-transform: skew(-30deg) translate3d(70%, 0, 0);
+    -moz-transform: skew(-30deg) translate3d(70%, 0, 0);
+    -ms-transform: skew(-30deg) translate3d(70%, 0, 0);
+    -o-transform: skew(-30deg) translate3d(70%, 0, 0);
+    opacity: 1;
+}
+.btn:not([data-action]):hover:after {
+    -webkit-transform: skew(30deg) translate3d(-70%, 0, 0);
+    -moz-transform: skew(30deg) translate3d(-70%, 0, 0);
+    -ms-transform: skew(30deg) translate3d(-70%, 0, 0);
+    -o-transform: skew(30deg) translate3d(-70%, 0, 0);
+    opacity: 1;
+}
+.btn:not([data-action]) span {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.btn:not([data-action]).btn-border {
+    border: 2px solid #fede00;
+    background: transparent;
+}
+.btn:not([data-action]).btn-lg {
+    height: auto;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 20px 35px;
+}
+@media (max-width: 767px) {
+    .btn:not([data-action]).btn-lg {
+        font-size: 16px;
+    }
+}
+.btn:not([data-action]).btn-lg [class*='icon-'] {
+    font-size: 20px;
+    padding-right: 20px;
+    vertical-align: text-top;
+}
+.btn:not([data-action]).btn-sm {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-transform: none;
+    min-width: 0;
+}
+.btn:not([data-action]).btn-xs {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: bold;
+    padding: 10px 15px;
+    min-width: 0;
+}
+.btn:not([data-action]) [class*='icon-'] {
+    font-size: 18px;
+    color: #fff;
+    padding-right: 14px;
+    vertical-align: text-bottom;
+}
+.btn.btn-full {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+.btn-invert:not([data-action]),
+.btn-invert:not([data-action]).active,
+.btn-invert:not([data-action]):active,
+.btn-invert:not([data-action]).focus,
+.btn-invert:not([data-action]):focus {
+    background: #fede00;
+    color: #2c2c2c;
+}
+.btn-invert:not([data-action]):hover {
+    background: #2c2c2c !important;
+    color: #fff !important;
+}
+.btn-invert:not([data-action]):before,
+.btn-invert:not([data-action]):after {
+    background-color: #2c2c2c !important;
+}
+.btn-invert-alt:not([data-action]),
+.btn-invert-alt:not([data-action]).active,
+.btn-invert-alt:not([data-action]):active,
+.btn-invert-alt:not([data-action]).focus,
+.btn-invert-alt:not([data-action]):focus {
+    background: #2c2c2c;
+}
+.btn-invert-alt:not([data-action]):hover {
+    background-color: #fff;
+    color: #2c2c2c;
+}
+.btn-white {
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+.btn-white,
+.btn-white.active,
+.btn-white:active,
+.btn-white.focus,
+.btn-white:focus {
+    background: #fff;
+    color: #2c2c2c;
+}
+.btn-white:hover {
+    background-color: #2c2c2c;
+    color: #fff;
+}
+.btn-inline .btn {
+    margin: 0 24px 10px 0;
+}
+.text-center .btn-inline .btn {
+    margin: 0 12px 10px;
+}
+
+@media (max-width: 1199px) {
+    .messenger {
+        bottom: 3% !important;
+    }
+}
+.appointment {
+    display: block;
+    float: right;
+    position: relative;
+    background-color: #fede00;
+    height: 59px;
+    border-radius: 0 0 0 20px;
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    padding: 17px 20px;
+    margin-left: -15px;
+    width: 305px;
+    color: #000;
+    text-align: center;
+    outline: none;
+}
+#phoneForm  h2 {
+    font-size: 34px;
+    line-height: 56px;
+    font-family: 'roboto_condensed', sans-serif;
+    font-weight: 500;
+    margin: 0 0 30px;
+    color: #E31F25;
+}
+#phoneForm  h5 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 300;
+    font-family: 'Muli', sans-serif;
+    padding: 0;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+}
+#phoneForm .container-fluid  p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+
+@media (max-width: 1199px) {
+    .appointment {
+        width: 250px;
+        font-size: 22px;
+        padding: 17px 10px;
+    }
+
+
+    #phoneForm  h2 {
+        color: #E31F25;
+        font-family: "roboto_condensed",sans-serif;
+        font-size: 31px;
+        font-weight: 500;
+        line-height: 41px;
+        margin: 0 0 30px;
+    }
+
+    #phoneForm  h5 {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 25px;
+        margin: 0 0 15px;
+        padding: 0;
+    }
+}
+.appointment:focus,
+.appointment:hover {
+    outline: none;
+}
+.appointment .icon {
+    margin-right: 12px;
+}
+.appointment span,
+.appointment .icon {
+    display: inline-block;
+    vertical-align: top;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+.appointment:hover .icon {
+    padding-left: 15px;
+    -webkit-transition: all 0.3s ease 0.2s;
+    -moz-transition: all 0.3s ease 0.2s;
+    -ms-transition: all 0.3s ease 0.2s;
+    -o-transition: all 0.3s ease 0.2s;
+}
+.appointment:after {
+    position: absolute;
+    left: -41.3px;
+    top: 0;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0px 48px 54px 0;
+    border-color: transparent #fede00 transparent transparent;
+}
+@media (max-width: 991px) {
+    .appointment {
+        white-space: nowrap;
+        padding: 10px 20px;
+        width: auto;
+        color: #000;
+        text-align: center;
+        font-size: 18px;
+        line-height: 22px;
+        height: 42px;
+    }
+    .appointment .icon {
+        margin-right: 8px;
+        font-size: 20px;
+    }
+    .appointment:after {
+        top: -17px;
+    }
+}
+@media (max-width: 479px) {
+
+    .messenger {
+        background-color: rgba(0, 0, 0, 0.25);
+        border-radius: 0 26px 0 0;
+        bottom: 1% !important;
+        display: inline-block;
+        left: 0;
+        list-style-type: none;
+        margin-left: 0;
+        padding: 2px 0 0;
+        position: fixed;
+        z-index: 999999;
+    }
+
+}
+.messenger {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 0 15px 15px 0;
+    display: inline-block;
+    left: 0;
+    list-style-type: none;
+    margin-left: 0;
+    padding: 11px 2px 0 0;
+    position: fixed;
+    bottom: 70%;
+    z-index: 999999;
+}
+.messenger ul li {
+    list-style-type: none;
+}
+.messenger img {
+    margin-left: -53px;
+    width: 65px;
+    padding: 2px 0 0 15px;
+    text-align: left !important;
+    z-index: 999999;
+}
+
+@media (min-width: 768px) {
+    .image-scale-color {
+        position: relative;
+        overflow: hidden;
+        display: block;
+    }
+    .image-scale-color > a {
+        display: block;
+        overflow: hidden;
+    }
+    .image-scale-color img {
+        -webkit-transition: transform 0.4s ease-in-out 0.05s;
+        -moz-transition: transform 0.4s ease-in-out 0.05s;
+        -ms-transition: transform 0.4s ease-in-out 0.05s;
+        -o-transition: transform 0.4s ease-in-out 0.05s;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        image-rendering: optimizeQuality;
+        vertical-align: middle;
+        max-width: 100%;
+    }
+    .image-scale-color:after {
+        content: '';
+        background: #a2cf8d;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        -webkit-transition: opacity 0.4s ease-in-out;
+        -moz-transition: opacity 0.4s ease-in-out;
+        -ms-transition: opacity 0.4s ease-in-out;
+        -o-transition: opacity 0.4s ease-in-out;
+    }
+    .image-scale-color:hover:after {
+        opacity: 0.2;
+    }
+    .image-scale-color:hover img {
+        -webkit-transform: scale3d(1.1, 1.1, 1) rotate(0.0001deg);
+        transform: scale3d(1.1, 1.1, 1) rotate(0.0001deg);
+    }
+
+    #contact .footer-col-left .inside {
+        width: 470px;
+        float: right;
+        padding: 0px 15px 55px 0;
+    }
+}
+
+.successform,
+.errorform {
+    display: none;
+    height: 70px;
+}
+.successform span,
+.errorform span {
+    display: block;
+}
+.successform span p,
+.errorform span p {
+    margin-top: 15px;
+}
+.successform span p {
+    color: #2990d6;
+}
+
+.white {
+    color: #fff !important;
+}
+
+.contact-info {
+    color: #fff;
+    margin: 0 0 25px;
+    padding-left: 50px;
+    position: relative;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+}
+
+.contact-info > .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 36px;
+    line-height: 1em;
+    color: #fe7e00;
+}
+
+h2.h-phone {
+    letter-spacing: -1px;
+    font-size: 34px;
+    line-height: 56px;
+    margin: 0 0 40px;
+}
+
+.color{
+    color: #fede00 !important;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #contact .footer-col-left .inside {
+        width: 390px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    #contact .footer-col-left .inside {
+        width: 360px;
+    }
+    #contact .footer-col-left,
+    #contact .footer-col-right {
+        width: 50%;
+    }
+}
+.divider {
+    clear: both;
+    height: 20px;
+}
+/*-----  3.8 Appointment Form    --------*/
+#appointmentForm.modal {
+    padding-left: 0 !important;
+}
+#privacy.modal .modal-dialog,
+#phoneForm.modal .modal-dialog,
+#appointmentForm.modal .modal-dialog {
+    margin: 0 auto;
+    width: 1170px;
+    padding-left: 0;
+    padding-right: 0;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    #privacy.modal .modal-dialog,
+    #phoneForm.modal .modal-dialog,
+    #appointmentForm.modal .modal-dialog {
+        width: 970px;
+    }
+}
+@media (max-width: 991px) {
+    #privacy.modal .modal-dialog,
+    #phoneForm.modal .modal-dialog,
+    #appointmentForm.modal .modal-dialog {
+        width: 100%;
+    }
+}
+#privacy.modal .modal-dialog .modal-body,
+#phoneForm.modal .modal-dialog .modal-body,
+#appointmentForm.modal .modal-dialog .modal-body {
+    padding: 0 70px 40px;
+}
+@media (max-width: 991px) {
+    #privacy.modal .modal-dialog .modal-body,
+    #phoneForm.modal .modal-dialog .modal-body,
+    #appointmentForm.modal .modal-dialog .modal-body {
+        padding: 0 30px 20px;
+    }
+}
+@media (max-width: 767px) {
+    #privacy.modal .modal-dialog .modal-body,
+    #phoneForm.modal .modal-dialog .modal-body,
+    #appointmentForm.modal .modal-dialog .modal-body {
+        padding: 0 0 10px;
+    }
+}
+#privacy.modal .modal-dialog .modal-content,
+#phoneForm.modal .modal-dialog .modal-content,
+#appointmentForm.modal .modal-dialog .modal-content {
+    background-color: #fff;
+    border-radius: 0;
+    border: 0;
+}
+@media (max-width: 991px) {
+    #privacy.modal .modal-dialog .modal-content,
+    #phoneForm.modal .modal-dialog .modal-content,
+    #appointmentForm.modal .modal-dialog .modal-content {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+#privacy.modal .modal-dialog .modal-header,
+#phoneForm.modal .modal-dialog .modal-header,
+#appointmentForm.modal .modal-dialog .modal-header {
+    height: 59px;
+    border: 0;
+    padding: 0;
+}
+@media (max-width: 1240px) {
+    #privacy.modal .modal-dialog .modal-header,
+    #phoneForm.modal .modal-dialog .modal-header,
+    #appointmentForm.modal .modal-dialog .modal-header {
+        margin-bottom: 35px;
+    }
+}
+#privacy.modal .modal-dialog .modal-header .close,
+#phoneForm.modal .modal-dialog .modal-header .close,
+#appointmentForm.modal .modal-dialog .modal-header .close {
+    margin-top: 0;
+    position: absolute;
+    right: -70px;
+    top: 5px;
+    font-size: 58px;
+    text-shadow: inherit;
+    opacity: 1;
+    color: #fede00;
+}
+@media (max-width: 1240px) {
+    #privacy.modal .modal-dialog .modal-header .close,
+    #phoneForm.modal .modal-dialog .modal-header .close,
+    #appointmentForm.modal .modal-dialog .modal-header .close {
+        left: 0;
+        right: 0;
+        top: 0;
+        background: #131313;
+        width: 100%;
+        text-align: left;
+        z-index: 0;
+        font-size: 24px;
+        line-height: 58px;
+        padding-left: 25px;
+    }
+}
+@media (max-width: 1240px) {
+    #privacy.modal .modal-dialog .modal-header .close,
+    #phoneForm.modal .modal-dialog .modal-header .close,
+    #appointmentForm.modal .modal-dialog .modal-header .close {
+        font-size: 20px;
+        line-height: 22px;
+        height: 42px;
+    }
+}
+#appointmentForm.modal a.appointment {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+#appointmentForm.modal .container-fluid {
+    padding: 0;
+    overflow-x: hidden;
+}
+#appointmentForm {
+    margin-bottom: 0;
+}
+#appointmentForm .form-inline {
+    position: relative;
+    margin-bottom: 14px;
+}
+@media (max-width: 767px) {
+    #appointmentForm .form-inline {
+        margin-bottom: 10px;
+    }
+}
+#appointmentForm .form-inline .form-inline {
+    margin-right: -20px;
+    width: 50%;
+}
+@media (max-width: 767px) {
+    #appointmentForm .form-inline .form-inline {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
+#phoneForm .form-inline > *,
+#appointmentForm .form-inline > * {
+    display: inline-block;
+    margin-right: 16px;
+    width: calc(50% - 20px);
+    vertical-align: top;
+}
+@media (max-width: 767px) {
+    #phoneForm .form-inline > *,
+    #appointmentForm .form-inline > * {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
+#phoneForm .form-inline > *:only-child,
+#appointmentForm .form-inline > *:only-child {
+    width: calc(100% - 20px);
+}
+@media (max-width: 767px) {
+    #phoneForm .form-inline > *:only-child,
+    #appointmentForm .form-inline > *:only-child {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
+#phoneForm .form-inline label,
+#appointmentForm .form-inline label {
+    width: 100% !important;
+}
+#phoneForm .form-inline .form-control,
+#appointmentForm .form-inline .form-control {
+    width: 100%;
+}
+#phoneForm .form-horizontal,
+#appointmentForm .form-horizontal {
+    padding: 0;
+}
+#phoneForm .form-horizontal .form-group,
+#appointmentForm .form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+#phoneForm .input-group .form-control,
+#appointmentForm .input-group .form-control {
+    display: block;
+    float: none;
+    width: 100%;
+}
+#phoneForm .textarea-custom,
+#appointmentForm .textarea-custom {
+    height: 115px;
+    min-height: 0;
+}
+.datetimepicker-wrap .form-control,
+.timepicker-wrap .form-control {
+    width: 100%;
+}
+.datetimepicker-wrap {
+    position: relative;
+}
+.datetimepicker-wrap:before {
+    content: "\e901";
+    font-family: 'auto';
+    position: absolute;
+    display: block;
+    top: 12px;
+    right: 15px;
+    font-size: 20px;
+    line-height: 27px;
+    color: #999;
+}
+.timepicker-wrap {
+    position: relative;
+}
+.timepicker-wrap:before {
+    content: "\e90a";
+    font-family: 'auto';
+    position: absolute;
+    display: block;
+    top: 12px;
+    right: 15px;
+    font-size: 20px;
+    line-height: 27px;
+    color: #999;
+}
+.bootstrap-datetimepicker-widget .btn[data-action] {
+    width: auto;
+    background: transparent !important;
+    min-width: 0;
+}
+.bootstrap-datetimepicker-widget .btn[data-action]:after,
+.bootstrap-datetimepicker-widget .btn[data-action]:before {
+    display: none;
+    opacity: 1;
+}
+.bootstrap-datetimepicker-widget .btn[data-action].btn-primary {
+    border: 0;
+    background-color: #2c2c2c !important;
+    color: #fff;
+}
+.bootstrap-datetimepicker-widget table td span {
+    display: block;
+    opacity: 1;
+}
+#appointmentForm.modal.fade,
+#appointmentForm.modal.fade .modal-dialog,
+#appointmentForm.modal.fade.in .modal-dialog {
+    opacity: 1;
+}
